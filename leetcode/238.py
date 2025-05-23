@@ -1,6 +1,6 @@
 from typing import List
 
-def productExceptSelf(nums: List[int]) -> List[int]:
+def productExceptSelf_2arrays(nums: List[int]) -> List[int]:
     # 1. create prefix and suffix product arrays
     prefix = [nums[0]]
     suffix = [nums[len(nums) - 1]]
@@ -22,6 +22,21 @@ def productExceptSelf(nums: List[int]) -> List[int]:
     print(f"{solution=}")
     print("-----")
     return solution
+
+
+def productExceptSelf(nums: List[int]) -> List[int]:
+    # lets try implementing the better solution 
+        ans = [nums[0]]
+        for i in range(1, len(nums)):
+            ans.append(ans[i-1] * nums[i])
+        suffix = nums[-1]
+        for i in range(1, len(nums)):
+            ans[i] = X * suffix
+            suffix *= nums[-i]
+        print(f"{nums=}")
+        print(f"{ans=}")
+        #for i in range(len(nums)):
+        return []
 
 
 nums = [1,2,3,4]
