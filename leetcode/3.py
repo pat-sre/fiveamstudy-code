@@ -1,4 +1,31 @@
 def lengthOfLongestSubstring(s: str) -> int:
+    # following the 5 am leetcoding guide
+    longest = 0
+    is_seen = [False for _ in range(255)]
+
+    l = 0
+    r = 0
+    # expand until condition is violated or end of the string
+    while r < len(s):
+        idx = get_index(s[r])
+        if is_seen[idx]: 
+            print(l, r, s[r])
+            longest = max(r - l, longest)
+            # shrink until condition is not violated
+            while is_seen[idx]:
+                idx_l = get_index(s[l])
+                is_seen[idx_l] = False
+                l += 1
+            print(l, r)
+        is_seen[idx] = True
+        r += 1
+
+    return max(r-l, longest)
+
+def get_index(char):
+    return ord(char)
+
+def lengthOfLongestSubstring_faster(s: str) -> int:
     # following leetcoding guide on the right 
     indices = {}
     seq = 0
@@ -24,8 +51,6 @@ def lengthOfLongestSubstring(s: str) -> int:
     #print()
     return max(r - start, longest_seq)
          
-
-
 def lengthOfLongestSubstring_slower(s: str) -> int:
     # following leetcoding guide on the right
     freq = [0] * 255 
@@ -62,7 +87,7 @@ def lengthOfLongestSubstring_slower(s: str) -> int:
 
 
 
-s = "dvdf"
+s = "pwwkew"
 assert lengthOfLongestSubstring("duda") == 3
 assert lengthOfLongestSubstring("pwwkew") == 3
 assert lengthOfLongestSubstring("bbbbb") == 1
