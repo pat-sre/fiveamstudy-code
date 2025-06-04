@@ -19,3 +19,4 @@ class Solution:
         slow.next = slow.next.next
         return head
         # HELL YEAH!
+        
