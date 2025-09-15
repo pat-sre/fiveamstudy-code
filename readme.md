@@ -3,20 +3,18 @@ Code, learn, and conquer before the world wakes up.
 
 ## About The Project
 
-This repository contains all the code, scripts, and notes from my daily 5 AM study sessions on my journey to becoming a world-class Site Reliability Engineer. 
-This is a public log of my progress, a library of my solutions, and a testament to the power of daily, focused effort.
+This repository contains all the code, scripts, and notes from my daily 5 AM study sessions on my journey to becoming a world-class Site Reliability Engineer.  
+This is a public log of my progress, a library of my solutions, and a testament to the power of daily, focused effort.  
 
 Here you'll find my work on various SRE topics, including:
 
-    🐧 Linux Internals & Networking
+    Linux Internals & Networking
 
-    ☸️ Kubernetes & Containerization
+    Kubernetes & Containerization
 
-    🤖 Machine learning & AI'
+    Machine learning & AI
 
-    💻 Programming in Python, Go and C
-
-    ... and much more!
+    Programming in Python, Go and C
 
 ## Repository Structure
 
