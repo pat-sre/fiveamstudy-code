@@ -3,4 +3,5 @@
 *.o
 .venv
 *.pyc
+machine_learning/data
 CLAUDE.md
