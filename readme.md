@@ -23,8 +23,8 @@ Here you'll find my work on various SRE topics, including:
 This repository is organized by topic to make it easy to navigate and find specific information.
 ```
 fiveamstudy-code/
-  ├── CSAPP/                          # Computer Systems: A Programmer's Perspective
-  ├── programming/                    # Core programming exercises
+  ├── CSAPP/                         # Computer Systems: A Programmer's Perspective
+  ├── programming/                   # Core programming exercises
   │   ├── C/                         # C programming exercises
   │   │   ├── K&R/                   # K&R C Programming Language book exercises
   │   ├── go/                        # Go programming exercises
