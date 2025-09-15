@@ -62,7 +62,7 @@ This is a personal learning project, but if you spot an error, have a suggestion
 
 ## License
 
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License.
 
 ## Contact
 
