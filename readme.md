@@ -21,7 +21,7 @@ Here you'll find my work on various SRE topics, including:
 ## Repository Structure
 
 This repository is organized by topic to make it easy to navigate and find specific information.
-
+```
 fiveamstudy-code/
   ├── CSAPP/                          # Computer Systems: A Programmer's Perspective
   ├── programming/                    # Core programming exercises
@@ -36,7 +36,7 @@ fiveamstudy-code/
   ├── machine_learning/              # Machine learning implementations
   ├── devops/                        # DevOps configurations
   └── vllm/                          # vLLM inference server things
-
+```
 ## Getting Started
 
 Most of the code in this repository is for learning and demonstration purposes. To run a specific script or project, navigate to its directory and follow the instructions in the local README.md file, if available.
